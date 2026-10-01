@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>EduGenie - AI Learning Companion</title>
+
+    <!-- Correct CSS location -->
+    <link
+        rel="stylesheet"
+        href="/static/css/style.css"
+    >
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <h1>EduGenie</h1>
+            <p>AI Learning Companion</p>
+        </div>
+    </header>
+
+
+    <main class="container">
+
+        <!-- Question & Answer -->
+        <section class="card">
+            <h2>Ask EduGenie</h2>
+
+            <textarea
+                id="question"
+                placeholder="Ask a question..."
+                rows="4"
+            ></textarea>
+
+            <button onclick="askQuestion()">
+                Ask Question
+            </button>
+
+            <div
+                id="qa-result"
+                class="result"
+            ></div>
+        </section>
+
+
+        <!-- Explain Topic -->
+        <section class="card">
+            <h2>Explain a Topic</h2>
+
+            <input
+                type="text"
+                id="topic"
+                placeholder="Enter a topic..."
+            >
+
+            <button onclick="explainTopic()">
+                Explain
+            </button>
+
+            <div
+                id="explain-result"
+                class="result"
+            ></div>
+        </section>
+
+
+        <!-- Summarize -->
+        <section class="card">
+            <h2>Summarize Text</h2>
+
+            <textarea
+                id="summary-text"
+                placeholder="Paste text to summarize..."
+                rows="6"
+            ></textarea>
+
+            <button onclick="summarizeText()">
+                Summarize
+            </button>
+
+            <div
+                id="summary-result"
+                class="result"
+            ></div>
+        </section>
+
+
+        <!-- Quiz -->
+        <section class="card">
+            <h2>Generate Quiz</h2>
+
+            <textarea
+                id="quiz-text"
+                placeholder="Enter study material..."
+                rows="6"
+            ></textarea>
+
+            <button onclick="generateQuiz()">
+                Generate Quiz
+            </button>
+
+            <div
+                id="quiz-result"
+                class="result"
+            ></div>
+        </section>
+
+
+        <!-- Learning Path -->
+        <section class="card">
+            <h2>Learning Path</h2>
+
+            <input
+                type="text"
+                id="learning-topic"
+                placeholder="Enter a topic..."
+            >
+
+            <button onclick="getLearningPath()">
+                Get Learning Path
+            </button>
+
+            <div
+                id="learning-result"
+                class="result"
+            ></div>
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+        <p>EduGenie &copy; 2026</p>
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="/static/css/js/app.js"></script>
+
+</body>
+</html>
